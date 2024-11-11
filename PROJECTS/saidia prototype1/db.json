@@ -1,0 +1,6 @@
+[
+    { "id": 1, "name": "Tractor", "price": 1500 },
+    { "id": 2, "name": "Plow", "price": 1200 },
+    { "id": 3, "name": "Harvester", "price": 2500 },
+    { "id": 4, "name": "Seed Drill", "price": 1800 }
+]

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Farm Machinery Rental | SAIDIA</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">SAIDIA</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#machinery">Machinery</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__btn">
+          <button class="btn">Get Started</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="app">
+      <section id="home" class="home__section">
+        <div class="header__container">
+          <h1>RENT THE BEST FARMING MACHINERY</h1>
+          <form action="/">
+            <div class="input__group">
+              <label for="location">Pick up & Return Location</label>
+              <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="Farming Area"
+              />
+            </div>
+            <div class="input__group">
+              <label for="start">Start Date</label>
+              <input
+                type="text"
+                name="start"
+                id="start"
+                placeholder="Oct 16, 8:00 AM"
+              />
+            </div>
+            <div class="input__group">
+              <label for="stop">Return Date</label>
+              <input
+                type="text"
+                name="stop"
+                id="stop"
+                placeholder="Oct 18, 6:00 PM"
+              />
+            </div>
+            <button class="btn">
+              <i class="ri-search-line"></i>
+            </button>
+          </form>
+          <img src="main-page.jpg" alt="machinery" />
+        </div>
+      </section>
+
+      <section class="section__container range__container" id="machinery">
+        <h2 class="section__header">AVAILABLE MACHINERY</h2>
+        <div class="range__grid">
+          <div class="range__card">
+            <img src="Tractor.jpg" alt="Tractor" />
+            <div class="range__details">
+              <h4>Tractors</h4>
+
+            </div>
+          </div>
+          <div class="range__card">
+            <img src="Haverster.jpg" alt="Harvester" />
+            <div class="range__details">
+              <h4>Harvesters</h>
+
+            </div>
+          </div>
+          <div class="range__card">
+            <img src="Plough.jpg" alt="Plough" />
+            <div class="range__details">
+              <h4>Ploughs</h>
+
+            </div>
+          </div>
+          <div class="range__card">
+            <img src="Sprayer.jpg" alt="Sprayer" />
+            <div class="range__details">
+              <h4>Sprayers</h>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section__container about__section">
+        <h2 class="section__header">ABOUT SAIDIA</h2>
+        <p>
+          Saidia is your trusted partner for renting top-quality farming
+          machinery. From tractors to harvesters, we provide a wide range of
+          equipment to help you farm more efficiently and effectively.
+        </p>
+      </section>
+
+      <section class="section__container contact__section" id="contact">
+        <h2 class="section__header">CONTACT US</h2>
+        <form action="/">
+          <input type="text" placeholder="Your email" />
+          <button class="btn">
+            <i class="ri-send-plane-fill"></i>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <p>Copyright © 2024 Saidia. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Simple routing for SPA
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
