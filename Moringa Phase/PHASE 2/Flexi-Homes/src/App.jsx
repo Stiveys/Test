@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const Navbar = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <nav className="bg-white py-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="flex items-center">
+          <img src="logo-url" alt="FlexiHome" className="h-8 w-8 mr-2" />
+          <h1 className="text-2xl font-bold text-blue-500">Flexi</h1>
+          <h1 className="text-2xl font-bold text-orange-500">Home</h1>
+        </div>
+        <ul className="flex items-center">
+          <li className="mr-4">
+            <a href="#" className="text-gray-600 hover:text-gray-900">Explore</a>
+          </li>
+          <li className="mr-4">
+            <a href="#" className="text-gray-600 hover:text-gray-900">Wishlist</a>
+          </li>
+          <li className="mr-4">
+            <a href="#" className="text-gray-600 hover:text-gray-900">Trips</a>
+          </li>
+          <li>
+            <button className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Login</button>
+          </li>
+        </ul>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </nav>
+  );
+};
 
-export default App
+export default Navbar;
